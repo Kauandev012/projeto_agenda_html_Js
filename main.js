@@ -1,9 +1,24 @@
-const form = document.getElementById(`form-agenda`);
-form.addEventListener(`submit`, function(e) {
+const form = document.getElementById('form-agenda');
+
+let linhas = '';
+
+form.addEventListener('submit', function(e) {
     e.preventDefault();
 
-    const inputnomecontato = document.getElementById(`Nomecontato`);
-    const inpoutnumerocontato = document.getElementById(`Numerocontato`);
+    const inputNomecontato = document.getElementById('Nomecontato');
+    const inpoutNumerocontato = document.getElementById('Numerocontato');
 
-    alert(`Nome: ${inputnomecontato.value} - numero: ${inpoutnumerocontato.value}`);
+    let linha = '<tr>';
+    linha += `<td>${inputNomecontato.value} </td>`;
+    linha += `<td>${inpoutNumerocontato.value}</td>`;
+    linha += '<tr>';
+
+    linhas += linha;
+
+    const corpotabela = document.querySelector('tbody');
+    corpotabela.innerHTML = linhas;
+
+    inputNomecontato.value = '';
+    inpoutNumerocontato.value ='';
+
 });

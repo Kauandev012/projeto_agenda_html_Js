@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>agenda de contato</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="./img_projeto/agenda_png.png" alt="agenda de contato">
+            <h1>Agenda de contato</h1>
+        </header>
+        <form id="form-agenda">
+            <input type="text" id="Nomecontato" required placeholder="nome do contato">
+            <input type="number" id="Numerocontato"  required placeholder="digite o numero para contato">
+            <button type="submit">adicionar contato +</button>
+        </form>
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Nome contato</th>
+                    <th>Numero contato</th>
+                    <th>Contato salvo?</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Kauan p.o</td>
+                    <td>92044-3207</td>
+                    <td><img src="./img_projeto/anotado_png.png" alt="conmfirmação de contato" /></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Nome do contato</td>
+                    <td>Numero do contato</td>
+                    <td> <span class="contato-sal sucesso"></span> Salvo com sucesso</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+</html>

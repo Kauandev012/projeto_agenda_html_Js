@@ -5,12 +5,12 @@ let linhas = '';
 form.addEventListener('submit', function(e) {
     e.preventDefault();
 
-    const inputNomecontato = document.getElementById('Nomecontato');
-    const inpoutNumerocontato = document.getElementById('Numerocontato');
+    const inputNomeContato = document.getElementById('Nomecontato');
+    const inpoutNumeroContato = document.getElementById('Numerocontato');
 
     let linha = '<tr>';
-    linha += `<td>${inputNomecontato.value} </td>`;
-    linha += `<td>${inpoutNumerocontato.value}</td>`;
+    linha += `<td>${inputNomeContato.value} </td>`;
+    linha += `<td>${inpoutNumeroContato.value}</td>`;
     linha += '<tr>';
 
     linhas += linha;
@@ -18,7 +18,7 @@ form.addEventListener('submit', function(e) {
     const corpotabela = document.querySelector('tbody');
     corpotabela.innerHTML = linhas;
 
-    inputNomecontato.value = '';
-    inpoutNumerocontato.value ='';
+    inputNomeContato.value = '';
+    inpoutNumeroContato.value ='';
 
 });
